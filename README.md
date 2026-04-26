@@ -16,7 +16,7 @@ Distributed, Redis-backed task queue for modern C++17 applications with worker o
 
 
 ## Overview
-cppq is a header-only task queue that lets you enqueue work from C++ and execute it asynchronously via Redis. Workers pull jobs, run user supplied handlers, and update task state in Redis. The library focuses on predictable behaviour and ease of adoption—drop the header in your project, link a couple of dependencies, and you have a resilient queue.
+Task queue that lets you enqueue work from C++ and execute it asynchronously via Redis. Workers pull jobs, run user supplied handlers, and update task state in Redis. The library focuses on predictable behaviour and ease of adoption—drop the header in your project, link a couple of dependencies, and you have a resilient queue.
 
 ### Architecture at a Glance
 - Producers enqueue `Task` objects into Redis lists and hashes.
